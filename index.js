@@ -14,7 +14,7 @@ const chiper = (word, num) => {
             let newIndex = index + num
             if(newIndex >= 26){
                 newWord += alpha[newIndex - 26]
-            } else newWord += alpha[index + num]
+            } else newWord += alpha[newIndex]
         } else newWord += word[i]
     }
     console.log(newWord)
